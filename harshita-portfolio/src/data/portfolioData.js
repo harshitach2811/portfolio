@@ -13,7 +13,7 @@ export const personalInfo = {
     "My goal is to grow into an AI Engineer who can move beyond theory and build practical, useful solutions."
   ],
   links: {
-    github: "https://harshitach2811.github.io/sales_dashboard/",
+    github: "https://github.com/harshitach2811",
     githubUser: "harshitach2811",
     linkedin: "https://www.linkedin.com/in/harshita-220899402",
     credlyBadge: "https://www.credly.com/badges/f5e4a345-dc91-468a-9776-cb2e85be8c45/public_url"
