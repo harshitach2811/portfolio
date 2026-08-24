@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-bg-base: #05050A;
+  --color-bg-card: #0E0E16;
+  --color-bg-card-subtle: #141420;
+  --color-accent-red: #DC2626;
+  --color-accent-crimson: #EF4444;
+  --color-accent-rose: #F43F5E;
+  --color-border-dark: #1E1E2C;
+  --color-border-red: rgba(220, 38, 38, 0.28);
+}
+
+@layer base {
+  * {
+    border-color: #1E1E2C;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    color: #FFFFFF;
+    background-color: #05050A;
+    color-scheme: dark;
+  }
+
+  /* Custom dark scrollbar with crimson red thumb */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05050A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1E1E2C;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #DC2626;
+  }
+}
+
+/* Subtle dot-grid pattern for technical dark containers with red tint */
+.bg-tech-grid {
+  background-size: 24px 24px;
+  background-image: 
+    radial-gradient(circle, rgba(220, 38, 38, 0.12) 1px, transparent 1px);
+}
+
+.bg-tech-grid-crimson {
+  background-size: 24px 24px;
+  background-image: 
+    radial-gradient(circle, rgba(239, 68, 68, 0.15) 1.2px, transparent 1.2px);
+}
+
+/* Ambient Red Radial Glow */
+.glow-red {
+  box-shadow: 0 0 40px -10px rgba(220, 38, 38, 0.35);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 30px -8px rgba(239, 68, 68, 0.4);
+}
+
+/* Pulse animation for 'Currently Learning' / Active red indicators */
+@keyframes red-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.15);
+  }
+}
+
+.animate-red-pulse {
+  animation: red-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
