@@ -138,7 +138,7 @@ export const featuredProject = {
   category: "Data Analytics & Visualization",
   status: "Completed & Documented",
   githubRepo: "harshitach2811/sales_dashboard",
-  githubUrl: "https://github.com/harshitach2811/sales_dashboard",
+  githubUrl: "https://harshitach2811.github.io/sales_dashboard/",
   description: "A sales analytics dashboard created to transform sales data into an easier-to-understand visual overview. The project focuses on exploring sales performance, identifying trends, and presenting business insights through an interactive analytical dashboard.",
   technologies: ["Python", "Data Analysis", "Data Visualization", "SQL / CSV Processing", "Dashboard Design"],
   whatILearned: [
