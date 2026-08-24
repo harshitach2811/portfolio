@@ -139,7 +139,7 @@ export default function Projects() {
                   className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-lg border-2 border-red-500/40 bg-[#08080E] text-white font-mono text-xs font-bold hover:text-rose-300 transition-all shadow-xs cursor-pointer"
                 >
                   <GitBranch className="w-4 h-4 text-rose-400" />
-                  <span>GitHub Repo</span>
+                  <span>live demo</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </motion.a>
               </div>
